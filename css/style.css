@@ -1,0 +1,345 @@
+/* Kids Dental Plans Website - Main Stylesheet */
+
+:root {
+  --primary-color: #008080; /* Teal blue */
+  --secondary-color: #005959; /* Darker teal for hover states */
+  --accent-color: #00b3b3; /* Lighter teal for accents */
+  --light-color: #ffffff; /* White */
+  --dark-color: #000000; /* Black */
+  --gray-color: #f8f9fa; /* Light gray for backgrounds */
+  --text-color: #333333; /* Dark gray for text */
+  --footer-color: #2c3e50; /* Dark blue-gray for footer */
+}
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: var(--light-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+/* Header Styles */
+.navbar {
+  background-color: var(--light-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 5rem 0;
+  position: relative;
+}
+
+.hero h1 {
+  color: var(--light-color);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Insurance Providers Section */
+.providers-section {
+  padding: 5rem 0;
+  background-color: var(--gray-color);
+}
+
+.provider-card {
+  background-color: var(--light-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 2rem;
+  height: 100%;
+}
+
+.provider-card:hover {
+  transform: translateY(-5px);
+}
+
+.provider-card img {
+  max-height: 80px;
+  object-fit: contain;
+  margin: 1.5rem auto;
+}
+
+.provider-card .card-body {
+  padding: 1.5rem;
+}
+
+.provider-card .card-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Features Section */
+.features-section {
+  padding: 5rem 0;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 2rem;
+}
+
+.feature-box i {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: var(--gray-color);
+  padding: 5rem 0;
+}
+
+.testimonial-card {
+  background-color: var(--light-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Blog Section */
+.blog-section {
+  padding: 5rem 0;
+}
+
+.blog-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 2rem;
+  height: 100%;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-card .card-body {
+  padding: 1.5rem;
+}
+
+.blog-card .card-title {
+  font-weight: 700;
+}
+
+.blog-card .card-text {
+  margin-bottom: 1.5rem;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: var(--light-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.75rem;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 128, 128, 0.25);
+}
+
+/* Provider Detail Pages */
+.provider-detail {
+  padding: 5rem 0;
+}
+
+.provider-logo {
+  max-height: 100px;
+  margin-bottom: 2rem;
+}
+
+.plan-card {
+  background-color: var(--light-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-top: 5px solid var(--primary-color);
+}
+
+.plan-card h3 {
+  margin-bottom: 1.5rem;
+}
+
+.plan-feature {
+  margin-bottom: 0.5rem;
+}
+
+.plan-feature i {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--footer-color);
+  color: var(--light-color);
+  padding: 3rem 0 1.5rem;
+}
+
+.footer h5 {
+  color: var(--light-color);
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer ul li a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer ul li a:hover {
+  color: var(--light-color);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+}
+
+.footer-bottom p {
+  margin-bottom: 0.5rem;
+}
+
+.social-icons a {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:hover {
+  color: var(--accent-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .providers-section,
+  .features-section,
+  .testimonials-section,
+  .blog-section,
+  .provider-detail {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+}
